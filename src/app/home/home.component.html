@@ -1,0 +1,6 @@
+<div *ngFor="let article of articles | async" (click)="goToViewPage(article)" class="homeDisplay">
+  <img src="{{article.imgURL}}">
+  <h3>{{article.title}}</h3>
+  <p>{{article.teaser}}</p>
+  <h4>{{article.author}}</h4>
+</div>
