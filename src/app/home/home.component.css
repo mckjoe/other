@@ -18,3 +18,8 @@ img {
 .homeDisplay {
   text-align: center;
 }
+
+.homeDisplay:hover {
+  cursor: pointer;
+  border: 5px solid pink;
+}

@@ -9,6 +9,7 @@ import { ReadComponent } from './read/read.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -20,7 +21,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    ReadComponent
+    ReadComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

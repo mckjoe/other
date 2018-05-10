@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
     this.articles = this.articleService.getArticles();
   }
 
-  goToViewPage(clickedArticle: Article) {
-    this.router.navigate(['articles', clickedArticle.id]);
+  goToViewPage(clickedArticle) {
+    this.router.navigate(['articles', clickedArticle.$key]);
   }
 
 }
